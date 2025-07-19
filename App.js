@@ -680,5 +680,6 @@ const generateVideoFromPrompt = async (prompt) => {
     return 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4';
 };
 
+// Mount the app
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(React.createElement(App));
