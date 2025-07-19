@@ -1,39 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animation Studio Debug</title>
+    <title>Animation Studio</title>
+    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- React Libraries -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel to compile JSX in the browser -->
     <script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
-    <script src="https://unpkg.com/lucide-react@latest/dist/lucide-react.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
-</head>
-<body>
-    <div id="root">Loading...</div>
-    
-    <!-- Simple test first -->
-    <script type="text/babel">
-        function TestApp() {
-            return React.createElement('div', {
-                className: 'min-h-screen bg-gray-900 text-white p-8'
-            }, 
-                React.createElement('h1', {
-                    className: 'text-4xl font-bold'
-                }, 'Animation Studio - Test Mode'),
-                React.createElement('p', {
-                    className: 'text-gray-400 mt-4'
-                }, 'If you see this, React is working!')
-            );
-        }
-        
-        // Test basic mounting
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(React.createElement(TestApp));
-        
-        console.log('React test app mounted successfully');
-    </script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Link to your React component -->
+    <script type="text/babel" src="App.js"></script>
+  </body>
 </html>
